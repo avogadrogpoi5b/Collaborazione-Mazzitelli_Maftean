@@ -19,17 +19,9 @@
   <input type="button" value="Submit">
 </form>
 </center>
-  <script>
-      var binrayOutput = document.getElementById("binary");
-      let decimal = 1435;
-      binrayOutput.innerHTML += "1435 == " + decimal.toString(2) + ". <br/> ";
-      decimal = -1435;
-      binrayOutput.innerHTML += "-1435 == " + (decimal >>> 0).toString(2) + ". <br/> "; // shifting the fake bit
-      decimal = 0;
-      binrayOutput.innerHTML += "0 == " + decimal.toString(2) + ". <br/> ";
-      decimal = 9658798;
-      binrayOutput.innerHTML += "9658798 == " + decimal.toString(2) + ". <br/> ";
-   </script>
+<h2> Convert decimal to binary using <i> Right shift operator </i> in JavaScript. </h2>
+      <h4> Converting 756435 to binary string. </h4>
+      <div id = "binary"> </div>
 </body>
 </head>
 </html>
