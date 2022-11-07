@@ -18,11 +18,27 @@
   Email: <input type="email" name="email"><br><br>
   <input type="button" value="Submit">
 </form>
+  <p>Il codice binario è composto da due cifre: 0 e ed è un sistema numerico di tipo posizionale. </p>
+<p>Esso è utilizzato nell'ambito dell'informatica per la rappresentazioni dei valori logici vero e falso.</p>
 </center>
 <h2> Convert decimal to binary using <i> Right shift operator </i> in JavaScript. </h2>
       <h4> Converting 756435 to binary string. </h4>
       <div id = "binary"> </div>
 </body>
+  <script>
+      var binrayOutput = document.getElementById("binary");
+      let decimal = 756435;
+      let binary = "";
+      while (decimal > 0) {
+         if (decimal & 1) {
+            binary = "1" + binary;
+         } else {
+            binary = "0" + binary;
+         }
+         decimal = decimal >> 1;
+      }
+      binrayOutput.innerHTML = binary;
+   </script>
 </head>
 </html>
 
