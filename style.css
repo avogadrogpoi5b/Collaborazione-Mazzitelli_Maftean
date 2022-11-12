@@ -2,7 +2,7 @@ body {
   background-color: lightblue;
 }
 
-p {
+p,h4 {
   color: navy;
   margin-left: 20px;
 }
